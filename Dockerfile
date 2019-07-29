@@ -1,16 +1,16 @@
 FROM tomcat:8-jre8
 
-MAINTAINER vadyalex <vadyalex at google mail>
+MAINTAINER tomerz <vadyalex at google mail>
 
-ENV SLF4J_VERSION 1.7.12
-ENV LOGBACK_VERSION 1.1.3
+ENV SLF4J_VERSION 1.7.25
+ENV LOGBACK_VERSION 1.2.3
 ENV LOGSTASH_LOGBACK_ENCODER_VERSION 4.4
 
 # logstash-logback-encoder depends on jackson-databind, jackson-annotation and jackson-core libraries
 ENV JACKSON_DATABIND_VERSION 2.5.4
 ENV JACKSON_ANNOTATIONS_VERSION 2.5.0
 
-ENV CATALINA_HOME /usr/local/tomcat
+ENV CATALINA_HOME /Users/tomer/Documents/workspace/Servers/tomcat
 
 WORKDIR $CATALINA_HOME/lib
 
